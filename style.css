@@ -4,12 +4,13 @@ body {
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-attachment: fixed; /* Keeps the image fixed during scrolling */
-  
+    min-height: 100vh;
+    min-width: 100vw;
 }
 .topnav {
-  overflow: hidden;
-  background-color: #494747;
-  
+    width: 100%;
+    height: 60px; /* Adjust as needed */
+    background-color: #494747;
 }
 
 .topnav h2 {
@@ -91,5 +92,38 @@ body {
     
 }
 .welcome h1 {
+    color: white;
+}
+
+.contactform {
+    float: right;
+    margin-top: 20%;
+    margin-left: 10%;
+    width: 30vw;
+    height: 40vh;
+}
+.contactform p{
+    color: white;
+    font-size: 16px;
+}
+.contactform input[name="message"] {
+    height: 20%;
+}
+.contactform button {
+    width: 100%;
+    margin-top: 5%;
+    
+}
+.contact_headline {
+    float: left;
+    margin-top: 25%;
+    margin-left:15%;
+}
+.contact_headline h1 {
+    font-size: 50px;
+    color: white;
+}
+.contact_headline p {
+    font-size: 16px;
     color: white;
 }
