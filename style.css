@@ -4,13 +4,17 @@ body {
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-attachment: fixed; /* Keeps the image fixed during scrolling */
-    min-height: 100vh;
-    min-width: 100vw;
+    min-height: 100%;
+    min-width: 100%;
+}
+.nav_div {
+    height: 10vh;
+    width: 100%;
 }
 .topnav {
     margin-top: 0%;
     width: 100%;
-    height: 60px; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
     background-color: #494747;
 }
 
@@ -27,6 +31,7 @@ body {
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
+  height: 10vh;
   display: block;
   color: black;
   text-align: center;
@@ -43,7 +48,7 @@ body {
 
 /* Style the "active" element to highlight the current page */
 .topnav a.active {
-  background-color: #2196F3;
+  background-color: #50565a;
   color: white;
 }
 
@@ -130,9 +135,9 @@ body {
 }
 .contactform button {
     width: 100%;
-    height: 3%;
-    margin-top: 5%;
-    
+    height: 3vh;
+    margin-top: 3%;
+    border-radius: 5px;
 }
 .contact_headline {
     float: left;
@@ -146,4 +151,27 @@ body {
 .contact_headline p {
     font-size: 16px;
     color: white;
+}
+.icons_bar {
+    position: fixed;  /* Fixes the bar to the left side */
+    top: 0;
+    left: 0;
+    height: 100%;  /* Full height of the screen */
+    width: 5%;  /* Adjust this width to fit your icons */
+    background-color: #333;  /* Optional background color for visibility */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;  /* Adds space from the top of the page */
+}
+
+.icons_bar img {
+    height: 50px;  /* Sets a fixed size for the icons */
+    width: 50px;
+    margin: 10px 0;  /* Adds space between the icons */
+}
+.contact_page{
+    width: 100vw;
+    height: 90vh;
 }
