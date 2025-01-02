@@ -8,6 +8,7 @@ body {
     min-width: 100vw;
 }
 .topnav {
+    margin-top: 0%;
     width: 100%;
     height: 60px; /* Adjust as needed */
     background-color: #494747;
@@ -97,26 +98,45 @@ body {
 
 .contactform {
     float: right;
-    margin-top: 20%;
+    margin-top: 10%;
     margin-left: 10%;
-    width: 30vw;
-    height: 40vh;
+    width: 35%;
+    height: 50%;
 }
-.contactform p{
+.contactform label{
     color: white;
     font-size: 16px;
+    
 }
-.contactform input[name="message"] {
-    height: 20%;
+.contactform input{
+    width: 100%;
+    height: 3vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 0; /* Ensures text starts at the very top-left */
+    background-color: transparent; /* Makes the background see-through */
+    border: 1px solid #ccc; /* Optional: Adds a border for visibility */
+    color: white; /* Sets text color */
+    border-radius: 5px; /* Rounds the corners slightly */
+    resize: none; /* Prevents resizing by the user */
+    box-sizing: border-box;
+    font-family: inherit; /* Inherits font from parent */
+    font-size: inherit; /* Inherits font size from parent */
+    line-height: 1.5; /* Sets line spacing */
+    overflow: hidden;
+}
+.contactform input[name="Message"] {
+    height: 20vh;
 }
 .contactform button {
     width: 100%;
+    height: 3%;
     margin-top: 5%;
     
 }
 .contact_headline {
     float: left;
-    margin-top: 25%;
+    margin-top: 15%;
     margin-left:15%;
 }
 .contact_headline h1 {
